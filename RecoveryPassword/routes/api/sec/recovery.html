@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ingrese su nueva contraseña</h1>
+    <label for="pswd">Nueva Contraseña</label><br>
+    <input type="text" placeholder="password" id="pswd" name="pswd">
+
+    <button type="submit" id="btnUpdate">Update</button>
+</body>
+</html>
+<script>
+    let btnUpdate = document.getElementById('btnUpdate');
+    let pswd = document.getElementById('pswd').value;
+    
+    btnUpdate.addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        let pswd = document.getElementById('pswd').value;
+        console.log(pswd);
+       
+    })
+
+</script>
